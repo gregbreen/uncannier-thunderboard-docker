@@ -31,7 +31,7 @@ rm -r SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v$1/platform/hwconf_dat
 rm -r SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v$1/util/third_party/emwin
 
 echo Running Docker build ...
-docker build --tag uncannier-thunderboard:gecko-sdk-suite-v$1 .
+docker build --tag gregbreen/uncannier-thunderboard:gecko-sdk-suite-v$1 .
 
 echo Cleaning up ...
 rm -r SimplicityStudio_v4
