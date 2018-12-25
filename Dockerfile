@@ -23,11 +23,19 @@ RUN sed -i "s/sudo apt-get install/apt-get install -y/" "/opt/SimplicityStudio_v
 RUN /opt/SimplicityStudio_v4/setup.sh
 
 # Need 64-bit edition of Qt5 for Simplicity Commander to run
-RUN apt-get install libqt5gui5
+RUN apt-get install -y libqt5gui5
 
 # Need to install the following package to avoid warnings during builds
 RUN apt-get install -y libcanberra-gtk-module
 
 # Put Simplicity Commander in the path - our build calls Commander
 ENV PATH="/opt/SimplicityStudio_v4/developer/adapter_packs/commander:$PATH"
+
+# Packages needed for unit testing
+RUN apt-get install -y make
+RUN apt-get install -y gcc
+RUN apt-get install -y g++
+RUN apt-get install -y gcc-multilib g++-multilib
+RUN apt-get install -y libcpputest-dev:i386
+RUN apt-get install -y lcov
 
