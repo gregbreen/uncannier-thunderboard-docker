@@ -26,7 +26,7 @@ mv v$1 SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v$1
 
 # Clean out other big things we don't need for CI of Thunderboard projects
 rm -r SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v$1/app
-rm -r SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v$1/hardware
+rm -r SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v$1/hardware/kit
 rm -r SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v$1/platform/hwconf_data
 rm -r SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v$1/util/third_party/emwin
 rm -r SimplicityStudio_v4/p2/org.eclipse.equinox.p2.core/cache/binary
