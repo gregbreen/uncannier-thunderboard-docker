@@ -39,3 +39,9 @@ RUN apt-get install -y gcc-multilib g++-multilib
 RUN apt-get install -y libcpputest-dev:i386
 RUN apt-get install -y lcov
 
+# Doxygen for documentation generation
+RUN apt-get install -y doxygen
+
+# Git to support CI tag builds
+RUN apt-get install -y git
+
