@@ -42,6 +42,9 @@ RUN apt-get install -y lcov
 # Doxygen for documentation generation
 RUN apt-get install -y doxygen
 
+# pmccabe for software metrics generation
+RUN apt-get install -y pmccabe
+
 # Git to support CI tag builds
 RUN apt-get install -y git
 
